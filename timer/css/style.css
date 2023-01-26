@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --text-font: 'Open Sans', sans-serif;
+    --bg-color: #1E88E5;
+    --container-color: #F5F5F5;
+    --btn-hover-color: #42A5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 64rem;
+    margin: 5rem auto;
+    background-color: var(--container-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 6px 0px #000;
+}
+
+.main-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.display-timer {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.time-stop {
+    color: red;
+}
+
+.group-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.main-button {
+    display: inline;
+    width: 10rem;
+    padding: .8rem 1rem;
+    border: none;
+    padding: 1.5rem 1;
+    margin-block: 1.5rem;
+    border-radius: .4rem;
+    background-color: var(--bg-color);
+    color: var(--container-color);
+    font-size: 1.8rem;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.main-button:hover {
+    background-color: var(--btn-hover-color);
+}
